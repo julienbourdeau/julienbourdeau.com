@@ -65,7 +65,8 @@ table {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: url('resources/bg.jpg');
+  background: url('resources/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 p {
   line-height: 28px;
@@ -115,4 +116,18 @@ p > a {
 }
 #links a:hover {
   color: #008bcc;
+}
+
+@media (max-width: 768px) {
+  #container {
+    margin: 0 10%;
+    width: 80%;
+  }
+  #links {
+    column-count: 2;
+  }
+  #links a {
+    display: block;
+    padding: 6px 0;
+  }
 }
