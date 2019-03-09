@@ -101,9 +101,10 @@ p > a {
 
 #links {
   margin: 32px 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 #links a {
-  display: inline-block;
   padding: 0 20px;
   color: #eee;
   text-decoration: none;
@@ -134,6 +135,7 @@ p > a {
     width: 80%;
   }
   #links {
+    display: block;
     column-count: 2;
   }
   #links a {
